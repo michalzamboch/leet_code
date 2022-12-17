@@ -1,0 +1,3 @@
+/mnt/e/Programování/leet_code/392 Is Subsequence/build/CMakeFiles/simple_example.dir
+/mnt/e/Programování/leet_code/392 Is Subsequence/build/CMakeFiles/edit_cache.dir
+/mnt/e/Programování/leet_code/392 Is Subsequence/build/CMakeFiles/rebuild_cache.dir

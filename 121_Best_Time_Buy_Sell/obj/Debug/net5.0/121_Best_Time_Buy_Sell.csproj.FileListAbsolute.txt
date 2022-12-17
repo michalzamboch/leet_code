@@ -1,0 +1,16 @@
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell.deps.json
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell.runtimeconfig.json
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell.runtimeconfig.dev.json
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell.dll
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/ref/121_Best_Time_Buy_Sell.dll
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/bin/Debug/net5.0/121_Best_Time_Buy_Sell.pdb
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.csproj.AssemblyReference.cache
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.AssemblyInfoInputs.cache
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.AssemblyInfo.cs
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.csproj.CoreCompileInputs.cache
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.dll
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/ref/121_Best_Time_Buy_Sell.dll
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.pdb
+/mnt/Data/Programování/leet_code/121_Best_Time_Buy_Sell/obj/Debug/net5.0/121_Best_Time_Buy_Sell.genruntimeconfig.cache

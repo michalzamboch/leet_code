@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "121_Best_Time_Buy_Sell/1.0.0": {
+        "runtime": {
+          "121_Best_Time_Buy_Sell.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "121_Best_Time_Buy_Sell/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
