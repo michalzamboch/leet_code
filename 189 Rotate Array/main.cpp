@@ -22,15 +22,18 @@ void print(bool x)
 void print(vector<int> s)
 {
     cout << "[ ";
-    for (auto x : s) {
+    for (auto x : s)
+    {
         cout << x << " ";
     }
     cout << "]" << endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    void rotate(vector<int>& nums, int k) {
+    void rotate(vector<int> &nums, int k)
+    {
         k = k % nums.size();
         vector<int> temp{nums};
 
@@ -50,17 +53,17 @@ public:
 
 int main()
 {
-    vector<int> arr{1,2,3,4,5,6,7};
+    vector<int> arr{1, 2, 3, 4, 5, 6, 7};
     int k = 3;
-    vector<int> arr2{-1,-100,3,99};
+    vector<int> arr2{-1, -100, 3, 99};
     int l = 2;
-    vector<int> arr3{1,2,3};
+    vector<int> arr3{1, 2, 3};
     int m = 2;
 
     auto s = new Solution();
     s->rotate(arr, k);
     s->rotate(arr2, l);
     s->rotate(arr3, m);
-    
+
     return 0;
 }

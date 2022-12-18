@@ -7,10 +7,6 @@
 
 using namespace std;
 
-namespace test{
-
-}
-
 // clear && g++ main.cpp && time ./a.out
 
 class Solution

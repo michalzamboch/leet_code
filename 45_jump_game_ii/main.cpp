@@ -15,9 +15,10 @@ void print(std::vector<T> arg)
     std::cout << std::endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    int jump(vector<int>& nums)
+    int jump(vector<int> &nums)
     {
         int begin = 0, end = 0, farthest = 0;
         int jumps = 0;
@@ -39,10 +40,10 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums1{2,3,1,1,4};
-    vector<int> nums2{2,3,0,1,4};
-    vector<int> nums3{1,2};
-    
+    vector<int> nums1{2, 3, 1, 1, 4};
+    vector<int> nums2{2, 3, 0, 1, 4};
+    vector<int> nums3{1, 2};
+
     Solution solution;
     auto result = solution.jump(nums3);
     cout << "result: " << result << endl;

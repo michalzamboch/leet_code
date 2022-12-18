@@ -27,14 +27,16 @@ void print(bool b)
     cout << (b ? "true" : "false") << endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    bool threeConsecutiveOdds(vector<int>& arr) {
+    bool threeConsecutiveOdds(vector<int> &arr)
+    {
         int counter = 0;
 
         for (int i = 0; i < arr.size(); i++)
         {
-            auto& num = arr.at(i);
+            auto &num = arr.at(i);
             if (odd(num) && counter < 3)
             {
                 counter++;
@@ -42,7 +44,6 @@ public:
                 {
                     return true;
                 }
-
             }
             else if (!odd(num) && counter < 3)
             {
@@ -58,17 +59,17 @@ public:
 
     bool odd(int num)
     {
-        return (num % 2) == 1; 
+        return (num % 2) == 1;
     }
 };
 
 int main()
 {
-    vector<int> v1{2,6,4,1};
-    vector<int> v2{1,2,34,3,4,5,7,23,12};
-    vector<int> v3{1,1,1};
+    vector<int> v1{2, 6, 4, 1};
+    vector<int> v2{1, 2, 34, 3, 4, 5, 7, 23, 12};
+    vector<int> v3{1, 1, 1};
     Solution s;
-    
+
     auto r1 = s.threeConsecutiveOdds(v1);
     print(r1);
 

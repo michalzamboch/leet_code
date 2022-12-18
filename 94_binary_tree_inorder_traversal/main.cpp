@@ -3,7 +3,8 @@
 
 using namespace std;
 
-struct TreeNode {
+struct TreeNode
+{
     int val;
     TreeNode *left;
     TreeNode *right;
@@ -12,17 +13,18 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-
-class Solution {
+class Solution
+{
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode *root)
+    {
         vector<int> result;
         inorderPrint(root, result);
 
         return result;
     }
 
-    void inorderPrint(TreeNode* root, vector<int> &v)
+    void inorderPrint(TreeNode *root, vector<int> &v)
     {
         if (root != nullptr)
         {

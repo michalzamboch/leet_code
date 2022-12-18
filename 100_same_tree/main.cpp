@@ -3,8 +3,8 @@
 
 using namespace std;
 
-
-struct TreeNode {
+struct TreeNode
+{
 	int val;
 	TreeNode *left;
 	TreeNode *right;
@@ -13,16 +13,18 @@ struct TreeNode {
 	TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-class Solution {
+class Solution
+{
 public:
-	bool isSameTree(TreeNode* p, TreeNode* q) {
+	bool isSameTree(TreeNode *p, TreeNode *q)
+	{
 		bool same = true;
 		preorder(p, q, same);
 
 		return same;
 	}
 
-	void preorder(TreeNode* p, TreeNode* q, bool &same)
+	void preorder(TreeNode *p, TreeNode *q, bool &same)
 	{
 		if (p != nullptr && q != nullptr)
 		{
@@ -46,14 +48,15 @@ public:
 		}
 	}
 
-	vector<int> preorderTraversal(TreeNode* root) {
+	vector<int> preorderTraversal(TreeNode *root)
+	{
 		vector<int> result;
 		preorder(root, result);
 
 		return result;
 	}
 
-	void preorder(TreeNode* root, vector<int> &v)
+	void preorder(TreeNode *root, vector<int> &v)
 	{
 		if (root != nullptr)
 		{

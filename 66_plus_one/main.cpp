@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void print(vector<int>& digits)
+void print(vector<int> &digits)
 {
     cout << "{ ";
     for (auto x : digits)
@@ -15,9 +15,11 @@ void print(vector<int>& digits)
     cout << "}" << endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> plusOne(vector<int>& digits) {
+    vector<int> plusOne(vector<int> &digits)
+    {
         int maxIndex = digits.size() - 1;
         digits.at(maxIndex) += 1;
         digits.insert(digits.begin(), 0);
@@ -58,7 +60,7 @@ int main(int argc, char const *argv[])
 
     Solution solution;
 
-    vector<int> digits{9,9,9,5,9};
+    vector<int> digits{9, 9, 9, 5, 9};
     print(digits);
 
     auto result = solution.plusOne(digits);

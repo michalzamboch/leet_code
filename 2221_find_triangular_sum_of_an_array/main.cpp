@@ -55,7 +55,7 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    vector<int> x{1,2,3,4,5};
+    vector<int> x{1, 2, 3, 4, 5};
     Solution solution;
     auto res = solution.triangularSum(x);
     cout << "res: " << res << endl;

@@ -20,7 +20,8 @@ public:
 
     int binSearch(vector<int> &arr, int l, int r, int x)
     {
-        if (r >= l) {
+        if (r >= l)
+        {
             int mid = l + (r - l) / 2;
 
             if (arr[mid] == x)
@@ -34,7 +35,6 @@ public:
 
         return -1;
     }
-
 
     int returnRow(vector<vector<int>> &matrix, int target)
     {
@@ -57,14 +57,15 @@ public:
     {
         auto delkaY = matrix.size();
         auto delkaX = matrix.at(0).size();
-        
-        if (r >= l) {
+
+        if (r >= l)
+        {
             int mid = l + (r - l) / 2;
 
             if (target >= matrix.at(mid).at(0) && target <= matrix.at(mid).at(delkaX - 1))
                 return mid;
 
-            if (target <= matrix.at(mid).at(0) && target <= matrix.at(mid).at(delkaX - 1))      // arr[mid] > target
+            if (target <= matrix.at(mid).at(0) && target <= matrix.at(mid).at(delkaX - 1)) // arr[mid] > target
                 return binSearchRow(matrix, l, mid - 1, target);
 
             return binSearchRow(matrix, mid + 1, r, target);
@@ -73,7 +74,6 @@ public:
         return -1;
     }
 };
-
 
 int main(int argc, char **argv)
 {

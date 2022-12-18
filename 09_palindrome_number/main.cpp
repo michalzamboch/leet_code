@@ -3,7 +3,8 @@
 
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
     bool isPalindrome(int x)
     {
@@ -11,7 +12,7 @@ public:
         {
             return false;
         }
-        
+
         string str1 = to_string(x);
         int delka = str1.length();
         int j = delka - 1;

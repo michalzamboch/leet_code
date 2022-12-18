@@ -18,25 +18,29 @@ void print(bool x)
 }
 
 void print(unordered_set<int> s)
-{ 
+{
     cout << "[ ";
-    for (auto x : s) {
+    for (auto x : s)
+    {
         cout << x << " ";
     }
     cout << "]" << endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    bool containsDuplicate(vector<int>& nums) {
+    bool containsDuplicate(vector<int> &nums)
+    {
         return usingUnorderedSet(nums);
     }
-    
-    bool usingSort(vector<int>& nums)
+
+    bool usingSort(vector<int> &nums)
     {
-       sort(nums.begin() , nums.end());
-        
-        for (int i = 0; i < (int)nums.size() - 1; i++) {
+        sort(nums.begin(), nums.end());
+
+        for (int i = 0; i < (int)nums.size() - 1; i++)
+        {
             if (nums.at(i) == nums.at(i + 1))
             {
                 return true;
@@ -44,10 +48,9 @@ public:
         }
 
         return false;
-
     }
 
-    bool usingUnorderedSet(vector<int>& nums)
+    bool usingUnorderedSet(vector<int> &nums)
     {
         unordered_set<int> res;
         for (auto x : nums)
@@ -61,7 +64,7 @@ public:
 
 int main()
 {
-    vector<int> x1 {1,2,3,1};    
+    vector<int> x1{1, 2, 3, 1};
 
     auto s = new Solution();
     auto res = s->containsDuplicate(x1);

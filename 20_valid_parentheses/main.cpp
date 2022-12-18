@@ -14,9 +14,11 @@ void print(vector<int> arg)
     cout << endl;
 }
 
-class Solution {
+class Solution
+{
 public:
-    bool isValid(string s) {
+    bool isValid(string s)
+    {
         if (s == "")
         {
             return true;
@@ -25,7 +27,7 @@ public:
         {
             return false;
         }
-        
+
         stack<char> open;
 
         for (const char c : s)

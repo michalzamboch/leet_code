@@ -21,17 +21,19 @@ void print(bool x)
 void print(unordered_set<int> s)
 {
     cout << "[ ";
-    for (auto x : s) {
+    for (auto x : s)
+    {
         cout << x << " ";
     }
     cout << "]" << endl;
 }
 
-
-class Solution {
+class Solution
+{
 public:
     // s - sub string, t - full string
-    bool isSubsequence(string s, string t) {
+    bool isSubsequence(string s, string t)
+    {
         if (s.empty())
         {
             return true;
@@ -55,7 +57,6 @@ public:
         return false;
     }
 };
-
 
 int main()
 {

@@ -39,7 +39,6 @@ void print(unordered_map<char, set<int>> umap)
             cout << i << ", ";
         }
         cout << endl;
-        
     }
 }
 

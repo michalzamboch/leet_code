@@ -4,7 +4,8 @@
 using namespace std;
 
 // Definition for singly-linked list.
-struct ListNode {
+struct ListNode
+{
     int val;
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
@@ -12,19 +13,19 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-
-
-class Solution {
+class Solution
+{
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+    {
+
         int sum = convert(l1) + convert(l2);
-        string str = to_string(sum);        
+        string str = to_string(sum);
 
         return insert(str);
     }
 
-    void print(ListNode* l)
+    void print(ListNode *l)
     {
         auto *x = l;
         while (x != nullptr)
@@ -50,11 +51,11 @@ public:
         return tmp;
     }
 
-    ListNode* insert(string num)
+    ListNode *insert(string num)
     {
         ListNode *ret;
         ListNode *pointer = ret;
-        
+
         int index = 1;
 
         for (auto i = num.length(); i >= 0; i--)
@@ -84,7 +85,6 @@ int main(int argc, char const *argv[])
     list2->next = new ListNode(6);
     list2->next->next = new ListNode(4);
 
-
     Solution solution;
     solution.print(list);
     solution.print(list2);
@@ -92,7 +92,5 @@ int main(int argc, char const *argv[])
     cout << solution.convert(list) << endl;
     cout << solution.convert(list2) << endl;
 
-
-    
     return 0;
 }
