@@ -1,16 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <span>
 
 using namespace std;
 
 void print(vector<int> s)
 {
-	for (auto x : s) {
-		cout << x << " ";
-	}
-	cout << endl;
+    for (auto x : s) {
+        cout << x << " ";
+    }
+    cout << endl;
 }
 
 class Solution {
@@ -28,12 +27,12 @@ public:
 
 int main()
 {
-	Solution s;
-	vector<int> v1{10,15,20};
+    Solution s;
+    vector<int> v1{10,15,20};
 
-	print(v1);
-	auto r1 = s.minCostClimbingStairs(v1);
-	cout << r1 << endl;
+    print(v1);
+    auto r1 = s.minCostClimbingStairs(v1);
+    cout << r1 << endl;
 
-	return 0;
+    return 0;
 }
