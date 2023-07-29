@@ -1,14 +1,24 @@
 fn is_palindrome(s: String) -> bool {
+    let letters = get_cleaned_vector(s);
+
+    if letters.len() == 0 {
+        return true;
+    }
+
+    is_vector_palindrome(letters)
+}
+
+fn get_cleaned_vector(s: String) -> Vec<char> {
     let letters = s
         .to_lowercase()
         .chars()
         .filter(|c| c.is_alphanumeric())
         .collect::<Vec<char>>();
 
-    if letters.len() == 0 {
-        return true;
-    }
+    letters
+}
 
+fn is_vector_palindrome(letters: Vec<char>) -> bool {
     let mut i = 0;
     let mut j = letters.len() - 1;
 
