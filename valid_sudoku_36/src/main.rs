@@ -50,18 +50,31 @@ pub fn valid_quad(board: &Vec<Vec<char>>, y: usize, x: usize) -> bool {
 }
 
 pub fn valid_columns(board: &Vec<Vec<char>>) -> bool {
-    let mut v = Vec::<char>::new();
-
-    for i in 0..9 {
-        for j in 0..9 {
-            v.push(board[j][i]);
-        }
-        if !valid_line(&v) {
+    for x in 0..9 {
+        if !valid_column(&board, x) {
             return false;
         }
-        v.clear();
     }
 
+    true
+}
+
+pub fn valid_column(board: &Vec<Vec<char>>, x: usize) -> bool {
+    let mut set = HashSet::<char>::new();
+    
+    for y in 0..9 {
+        if board[y][x] == '.' {
+            continue;
+        }
+
+        if set.contains(&board[y][x]) {
+            return false;
+        }
+        else {
+            set.insert(board[y][x]);
+        }
+    }
+    
     true
 }
 
@@ -134,6 +147,19 @@ fn main() {
         vec!['.','6','.','.','.','.','2','8','.'],
         vec!['.','.','.','4','1','9','.','.','5'],
         vec!['.','.','.','.','8','.','.','7','9']
+    ];
+    test(board);
+
+    board = vec![
+        vec!['.','.','4','.','.','.','6','3','.'],
+        vec!['.','.','.','.','.','.','.','.','.'],
+        vec!['5','.','.','.','.','.','.','9','.'],
+        vec!['.','.','.','5','6','.','.','.','.'],
+        vec!['4','.','3','.','.','.','.','.','1'],
+        vec!['.','.','.','7','.','.','.','.','.'],
+        vec!['.','.','.','5','.','.','.','.','.'],
+        vec!['.','.','.','.','.','.','.','.','.'],
+        vec!['.','.','.','.','.','.','.','.','.']
     ];
     test(board);
 }
