@@ -29,7 +29,7 @@ pub fn valid_quads(board: &Vec<Vec<char>>) -> bool {
 }
 
 pub fn valid_quad(board: &Vec<Vec<char>>, y: usize, x: usize) -> bool {
-    let mut set = HashSet::<char>::new();
+    let mut set = HashSet::new();
     
     for i in x..x + 3 {
         for j in y..y + 3 {
@@ -60,7 +60,7 @@ pub fn valid_columns(board: &Vec<Vec<char>>) -> bool {
 }
 
 pub fn valid_column(board: &Vec<Vec<char>>, x: usize) -> bool {
-    let mut set = HashSet::<char>::new();
+    let mut set = HashSet::new();
     
     for y in 0..9 {
         if board[y][x] == '.' {
@@ -89,7 +89,7 @@ pub fn valid_lines(board: &Vec<Vec<char>>) -> bool {
 }
 
 pub fn valid_line(line: &Vec<char>) -> bool {
-    let mut set = HashSet::<char>::new();
+    let mut set = HashSet::new();
     
     for i in line.iter() {
         if *i == '.' {
