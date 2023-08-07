@@ -1,5 +1,15 @@
 use std::collections::HashSet;
 
+pub fn single_number_xor_solution(nums: Vec<i32>) -> i32 {
+    let mut res: i32 = 0;
+
+    for num in nums {
+        res ^= num;
+    }
+    
+    res
+}
+
 pub fn single_number(nums: Vec<i32>) -> i32 {
     let mut set: HashSet<i32> = HashSet::new();
 
