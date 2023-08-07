@@ -2,10 +2,7 @@ use std::collections::HashSet;
 
 pub fn single_number_xor_solution(nums: Vec<i32>) -> i32 {
     let mut res: i32 = 0;
-
-    for num in nums {
-        res ^= num;
-    }
+    nums.iter().for_each(|x| res ^= x);
     
     res
 }
@@ -29,7 +26,7 @@ pub fn single_number(nums: Vec<i32>) -> i32 {
 }
 
 fn test(nums: Vec<i32>) {
-    let result = single_number(nums.clone());
+    let result = single_number_xor_solution(nums.clone());
     print(&nums);
     println!(" -> {}", result);
 }
